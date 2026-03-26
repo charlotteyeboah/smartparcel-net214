@@ -27,3 +27,16 @@ Command: git push -u origin main --force
 Problem: .pem file stored in OneDrive not local Desktop
 Solution: Used full OneDrive path
 Command: ssh -i "C:\Users\Charl\OneDrive\Desktop\smartparcel-key.pem" ec2-user@52.64.66.38
+
+## Issue 6 - Lambda Not Receiving SQS Messages
+Problem: Messages were stuck in SQS queue, Lambda not triggered
+Cause: Lambda trigger was connected to old deleted queue (martparcel)
+Solution: Deleted old Lambda trigger, added new trigger pointing to
+          correct queue: smartparcel-notifications-20210001636
+Result: SQS to Lambda to SNS email pipeline working correctly
+
+## Issue 7 - SQS Queue Name Typo
+Problem: Original SQS queue created as martparcel instead of smartparcel
+Cause: Typing error during queue creation
+Solution: Deleted wrong queue, recreated with correct name
+Result: Full notification pipeline working correctly
