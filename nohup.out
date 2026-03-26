@@ -1,0 +1,12 @@
+[2026-03-26 08:37:35 +0000] [15328] [INFO] Starting gunicorn 23.0.0
+[2026-03-26 08:37:35 +0000] [15328] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2026-03-26 08:37:35 +0000] [15328] [ERROR] connection to ('0.0.0.0', 8080) failed: [Errno 98] Address already in use
+[2026-03-26 08:37:36 +0000] [15328] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2026-03-26 08:37:36 +0000] [15328] [ERROR] connection to ('0.0.0.0', 8080) failed: [Errno 98] Address already in use
+[2026-03-26 08:37:37 +0000] [15328] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2026-03-26 08:37:37 +0000] [15328] [ERROR] connection to ('0.0.0.0', 8080) failed: [Errno 98] Address already in use
+[2026-03-26 08:37:38 +0000] [15328] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2026-03-26 08:37:38 +0000] [15328] [ERROR] connection to ('0.0.0.0', 8080) failed: [Errno 98] Address already in use
+[2026-03-26 08:37:39 +0000] [15328] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2026-03-26 08:37:39 +0000] [15328] [ERROR] connection to ('0.0.0.0', 8080) failed: [Errno 98] Address already in use
+[2026-03-26 08:37:40 +0000] [15328] [ERROR] Can't connect to ('0.0.0.0', 8080)
