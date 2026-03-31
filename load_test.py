@@ -20,13 +20,13 @@ def make_post_request(i):
     elapsed = time.time() - start
     return {'id': i, 'status': resp.status_code, 'time': round(elapsed, 3)}
 
-print('=== Test 1: GET /health ===')
+print('Test 1: GET /health')
 with concurrent.futures.ThreadPoolExecutor(max_workers=20) as pool:
     results = list(pool.map(make_health_request, range(20)))
 for r in results:
     print(f"Request {r['id']}: {r['status']} in {r['time']}s")
 
-print('\n=== Test 2: POST /api/parcels ===')
+print('\nTest 2: POST /api/parcels')
 with concurrent.futures.ThreadPoolExecutor(max_workers=20) as pool:
     results = list(pool.map(make_post_request, range(20)))
 for r in results:
